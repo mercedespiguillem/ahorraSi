@@ -383,4 +383,26 @@ $(document).ready(function () {
   $("#btn3").click(() => {
     $("#savings").slideDown("slow");
   });
+
+
+
+// LLAMADA A AJAX
+
+const URLJSON = "miJson.json";
+
+$("#btnSubmit").click(() => {
+  $.getJSON(URLJSON, function (respuesta, estado) {
+    if (estado === "success") {
+      for (const dato of respuesta) {
+        $("body").prepend(
+          `<div class="alert alert-danger "role="alert">
+            <h5>${dato.alerta}</h5>
+          </div>`
+        );
+      }
+    }
+  });
+});
+
+
 });
