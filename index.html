@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <!-- BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="container-fluid row d-flex justify-content-between m-0 p-50 header"
+      id="header"
+    >
+      <a href="index.html"><h1 class="col">AhorraSí</h1></a>
+      <div class="col d-flex align-items-center justify-content-end pb-40">
+          <nav class="d-none d-md-block">
+            <a href="" class="items mr-3">Inicio</a>
+            <a href="" class="items mr-3">Nosotros</a>
+            <a href="" class="items mr-3">Registrate</a>
+          </nav>
+
+      </div>
+      <!-- MENU HAMBURGUESA -->
+      <div class="dropdown dropleft d-md-none pt-10">
+        <a
+          class="fas fa-bars btn"
+          id="dLabel"
+          data-target="#"
+          href="#"
+          data-toggle="dropdown"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img src="./assets/png/004-hucha.png" alt="Menu en forma de cerdito" />
+        </a>
+        <nav class="d-flex  m-1 p-1"></nav>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="#" class="dropdown-item items p-2">Inicio</a></li>
+              <li><a href="#" class="dropdown-item items p-2">Nosotros</a></li>
+              <li><a href="#" class="dropdown-item items p-2">Registrate</a></li>
+          </ul> 
+        </nav>
+      </div>
+    </header>
+
+    <div class="container-fluid row p-0 d-flex background1">
+      <div>
+        <h2 class="col col-md-6 welcome">
+          ¡Bienvenido! <br />Con AhorraSí organizar tu dinero,
+          <br />
+          ahora es más fácil!
+        </h2>
+      </div>
+      <div>
+        <img
+          class="col col-md-12 img-welcome"
+          src="./assets/fondo.jpg"
+          class=""
+          alt="Imagen de portada"
+        />
+      </div>
+    </div>
+    <div class="row container-fluid p-0 m-0">
+      <div class="d-flex justify-content-between box-steps">
+        <div class="col-sm-12 col-md-4 ">
+          <h2 class="steps">Paso 1</h2>
+          <h4 class="steps">Registrate en nuestro sitio!</h4>
+        </div>
+        <div class="col-sm-12 col-md-4 ">
+          <h2 class="steps">Paso 2</h2>
+          <h4 class="steps">Calculá tus ingresos y tus gastos.</h4>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <h2 class="steps">Paso 3</h2>
+          <h4 class="steps">Establecé tu objetivo y empezá a ahorrar!</h4>
+        </div>
+      </div>
+    </div>
+    <main class="container-fluid">
+      <div class="row pt-5 m-0 d-flex">
+        <div
+          class="row col-sm-10 col-md-12 col-lg-12  justify-content-center align-items-center p-3"
+          id="registro"
+        >
+          <form action="" class="form-group">
+            <div class="col-md-10 m-2">
+              <label for="nombre" class="form-item">Usuario</label>
+              <input
+                type="text"
+                name="usuario"
+                id="formName"
+                placeholder="Nombre de Usuario"
+                class="form-control form-control-lg"
+                required
+              />
+            </div>
+            <div class="col-md-10 m-2">
+              <label for="email" class="form-item">Correo electrónico</label>
+              <input
+                type="email"
+                name="email"
+                id="formEmail"
+                placeholder="E-mail"
+                class="form-control form-control-lg"
+                required
+              />
+            </div>
+            <div class="col col-md-10 m-2">
+              <label for="pais" class="form-item">Pais</label>
+              <input
+                type="text"
+                id="formCountry"
+                placeholder="País de origen"
+                class="form-control form-control-lg"
+                required
+              />
+            </div>
+            <div class="col col-md-10 m-2">
+              <label for="password" class="form-item">Contraseña</label>
+              <input
+                type="password"
+                name="password"
+                id="formPassword"
+                placeholder="Contraseña"
+                class="form-control form-control-lg"
+              />
+              <button
+                type="submit"
+                id="btnSubmit"
+                class="btn btn-secondary m-3"
+              >Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="form2" class="container form-none">
+        <h2 class="titles">Calculá tus ingresos en 3 simples pasos</h2>
+        <div class="row d-flex" id="incomes">
+          <div class="col col-sm-8 col-md-6 m-2">
+            <input
+              type="number"
+              name="ingresos"
+              id="sueldo"
+              placeholder="Ingresa el monto de tu sueldo"
+              class="form-control form-control-lg m-2"
+            />
+            <input
+              type="number"
+              name="ingresos"
+              id="otros"
+              placeholder="otros ingresos"
+              class="form-control form-control-lg m-2"
+            />
+            <button type="submit" id="btn2" class="btn btn-secondary m-3">
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="divExpenses" class="container form-none">
+          <h2 class="titles">Ahora, calculemos tus gastos fijos mensuales</h2>
+          <div  id="expenses">
+            <div class="row col-md-12" width=100>
+                            <!-- buttons -->
+                  <button type="button" id="btnIcon1" class="btn icons p-3"><img src="assets/png/007-casa-1.png" alt="Icono de una casa" /></button>
+                  <button type="button" id="btnIcon2" class="btn icons p-3"><img src="assets/png/005-verduras-1.png" alt="Icono de comida" /></button>
+                  <button type="button" id="btnIcon3" class="btn icons p-3"><img src="assets/png/002-impuestos.png" alt="Icono de impuestos" /></button>
+                  <button type="button" id="btnIcon4" class="btn icons p-3"><img src="assets/png/009-smartphone.png" alt="Icono de celular" /></button>
+                  <button type="button" id="btnIcon5" class="btn icons p-3"><img src="assets/png/006-weights.png" alt="Icono de pesas" /></button>
+            </div>
+            <div class="row col col-md-6">
+                  <input
+                    type="number"
+                    min="0"
+                    name="alquiler"
+                    id="inputRent"
+                    placeholder="Gastos de alquiler"
+                    class="form-control form-control-lg m-2 to-hide"
+                  />
+                  <input
+                    type="number"
+                    name="gastos"
+                    min="0"
+                    id="inputFood"
+                    placeholder="Gastos en el supermercado"
+                    class="form-control form-control-lg m-2 to-hide"
+                  />
+                  <input
+                    type="number"
+                    name="gastos"
+                    min="0"
+                    id="inputTaxes1"
+                    placeholder="Gastos de electricidad"
+                    class="form-control form-control-lg m-2 to-hide"
+                  />
+                  <input
+                    type="number"
+                    name="gastos"
+                    min="0"
+                    id="inputTaxes2"
+                    placeholder="Gastos de gas"
+                    class="form-control form-control-lg m-2 to-hide"
+                  />
+                  <input
+                    type="number"
+                    name="gastos"
+                    min="0"
+                    id="inputTaxes3"
+                    placeholder="Gastos de agua"
+                    class="form-control form-control-lg m-2 to-hide"
+                  />
+                  <input
+                    type="number"
+                    name="gastos"
+                    min="0"
+                    id="inputTaxes4"
+                    placeholder="Gastos de celular"
+                    class="form-control form-control-lg m-2 to-hide"/>        
+                  <input
+                    type="number"
+                    name="gastos"
+                    min="0"
+                    id="inputTaxes5"
+                    placeholder="Gastos del gimnasio"
+                    class="form-control form-control-lg m-2 to-hide"
+                  />
+            </div>
+          </div>
+            <button type="submit" id="btn3" class="btn btn-secondary m-3 ">
+                  Aceptar
+            </button>
+      </div>
+      <!-- SECCION AHORRO  -->
+      <div  id="savings" class="container to-hide"> 
+        <div class="">
+          <button type="button" class="btn p-3 m-3 table-items" id="btn10">10%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn20">20%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn30">30%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn40">40%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn50">50%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn60">60%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn70">70%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn80">80%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn90">90%</button>
+          <button type="button" class="btn p-3 m-3 table-items" id="btn100">100%</button>
+        </div>
+        <div id="tabla" class="table-responsive col-md-10 to-hide">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col" class="table-items">Ahorrarás</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="mes2" class="table-items">
+                <th scope="row">En 2 meses</th>
+              </tr>
+              <tr id="mes3" class="table-items">
+                <th scope="row">En 3 meses</th>
+              </tr>
+              <tr id="mes6" class="table-items">
+                <th scope="row">En 6 meses</th>
+              </tr>
+              <tr id="mes12" class="table-items">
+                <th scope="row">En 12 meses</th>
+              </tr>
+              <tr id="mes18" class="table-items">
+                <th scope="row">En 18 meses </th>
+              </tr>
+              <tr id="mes24" class="table-items" >
+                <th scope="row">En 24 meses</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="container-fluid d-flex
+    justify-content-around
+    align-items-center mt-5 pt-5 footer">
+      <a href="" class="footer-items m-3 p-3">Contactanos</a>
+      <a href="" class="footer-items m-3 p-3">Sobre nosotros</a>
+      <a href="" class="footer-items m-3 p-3">Politica de privacidad</a>
+    </footer>
+
+    <script defer src="app.js"></script>
+    <!-- SCRIPTS JQUERYS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
